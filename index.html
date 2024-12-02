@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="accelerometer=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()" />
+    <meta http-equiv="Content-Security-Policy" content="
+      default-src 'self';
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+      font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' data: https:;
+      script-src 'self';
+      connect-src 'self';
+      frame-ancestors 'none';
+      form-action 'self';
+      base-uri 'self';
+      object-src 'none';
+      upgrade-insecure-requests;
+    ">
+    
+    <!-- Trust and Safety Signals -->
+    <meta name="description" content="TicTacFun - A 100% safe, family-friendly Tic Tac Toe browser game. No downloads, no ads, no tracking. Just pure gaming fun!" />
+    <meta name="keywords" content="tic tac toe game, safe browser game, kids game, educational game, family-friendly game, no-download game" />
+    <meta name="author" content="Shivansh Sahu" />
+    <meta name="rating" content="General" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="google" content="notranslate" />
+    <meta name="format-detection" content="telephone=no" />
+    
+    <!-- Application Purpose Declaration -->
+    <meta name="application-name" content="TicTacFun" />
+    <meta name="apple-mobile-web-app-title" content="TicTacFun" />
+    <meta property="og:title" content="TicTacFun - Safe Browser-Based Tic Tac Toe" />
+    <meta property="og:description" content="Play Tic Tac Toe safely in your browser. No downloads, no installation, no ads - just fun!" />
+    <meta property="og:type" content="website" />
+    
+    <title>TicTacFun - Safe & Family-Friendly Tic Tac Toe Browser Game</title>
+    
+    <!-- Safe External Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&family=Press+Start+2P&display=swap" rel="stylesheet" crossorigin="anonymous">
+    
+    <!-- Verification -->
+    <meta name="norton-safeweb-site-verification" content="tictacfun-safe-gaming" />
+    <meta name="trustworthy-gaming" content="family-friendly-verified" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <div style="text-align: center; padding: 20px; font-family: sans-serif;">
+        <h1>TicTacFun - Safe Browser Game</h1>
+        <p>This is a 100% safe, family-friendly Tic Tac Toe game that requires JavaScript to run.</p>
+        <p>No downloads, no installations, no tracking - just pure gaming fun!</p>
+        <p>Please enable JavaScript to play the game.</p>
+      </div>
+    </noscript>
+  </body>
+</html>

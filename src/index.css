@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Fredoka', system-ui, sans-serif;
+}
+
+.game-title {
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 4px 4px 0px theme(colors.blue.500/50%);
+}
+
+@keyframes winner-cell {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.winner-cell {
+  animation: winner-cell 0.5s ease-in-out infinite;
+}
+
+@keyframes victory-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+.victory-bounce {
+  animation: victory-bounce 1s ease-in-out infinite;
+}
+
+.pixel-border {
+  box-shadow: 
+    4px 0 0 0 theme(colors.slate.300),
+    -4px 0 0 0 theme(colors.slate.300),
+    0 4px 0 0 theme(colors.slate.300),
+    0 -4px 0 0 theme(colors.slate.300);
+}
+
+.dark .pixel-border {
+  box-shadow: 
+    4px 0 0 0 theme(colors.slate.600),
+    -4px 0 0 0 theme(colors.slate.600),
+    0 4px 0 0 theme(colors.slate.600),
+    0 -4px 0 0 theme(colors.slate.600);
+}
